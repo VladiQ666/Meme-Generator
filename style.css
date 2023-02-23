@@ -1,0 +1,242 @@
+.footer {
+    flex: 0 0 auto;
+    background-color: #0f111a;
+    height: auto;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.footer__left {
+    margin-left: 30px;
+    text-align: center;
+    display: flex;
+}
+
+.footer__author {
+    font-size: 14px;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.footer__author a {
+    position: relative;
+    text-decoration: none;
+    color: #ff2b1d;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.footer__author a:after {
+    display: block;
+    position: absolute;
+    left: 1%;
+    width: 0;
+    height: 2px;
+    background-color: #ff2b1d;
+    content: "";
+    transition: width 0.3s ease-out;
+}
+
+.footer__author a:hover:after, .footer__author a:focus:after {
+    width: 98%;
+}
+
+.footer__copy {
+    display: inline;
+    font-size: 14px;
+    color: #fff;
+}
+
+.footer__right {
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.footer__social {
+    display: flex;
+    text-align: center;
+}
+
+.footer__social a {
+    margin-right: 5px;
+}
+
+.footer__social a img {
+    width: 25px;
+    height: auto;
+    transition: all .3s;
+}
+
+.footer__social a img:hover {
+   transform: scale(1.25);
+}
+
+.header {
+    height: 70px;
+    background-color: #0f111a;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 auto;
+}
+
+.header__img {
+    margin-right: 25px;
+    width: 50px;
+    height: 55px;
+}
+
+.header > p {
+    font-size: 32px;
+    color: #c3c3c3;
+    margin: 0;
+}
+
+.memgen {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;*/
+    align-items: center;
+    height: 450px;
+    padding-top: 50px;
+}
+
+.wrapMem {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.meme_img {
+   margin-top: 20px;
+    position: relative;
+    justify-self: center;
+}
+
+.meme_img > h2 {
+    position: absolute;
+    width: 80%;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 10px 0;
+    font-family: Impact, sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 1px;
+    text-shadow:
+            -0   -2px 0   #000000,
+            0   -2px 0   #000000,
+            -0    2px 0   #000000,
+            0    2px 0   #000000,
+            -2px -0   0   #000000,
+            2px -0   0   #000000,
+            -2px  0   0   #000000,
+            2px  0   0   #000000,
+            -1px -2px 0   #000000,
+            1px -2px 0   #000000,
+            -1px  2px 0   #000000,
+            1px  2px 0   #000000,
+            -2px -1px 0   #000000,
+            2px -1px 0   #000000,
+            -2px  1px 0   #000000,
+            2px  1px 0   #000000,
+            -2px -2px 0   #000000,
+            2px -2px 0   #000000,
+            -2px  2px 0   #000000,
+            2px  2px 0   #000000,
+            -2px -2px 0   #000000,
+            2px -2px 0   #000000,
+            -2px  2px 0   #000000,
+            2px  2px 0   #000000;
+}
+
+.meme_img > .meme__text-top {
+    top: 0;
+}
+
+.meme_img > .meme__text-bottom {
+    bottom: 0;
+}
+
+.meme_img img {
+    max-width: 340px;
+    max-height: 340px;
+}
+
+.memgen__input {
+    height: 20px;
+    padding: 2px 4px;
+    border-radius: 7px;
+    text-shadow: none;
+    outline: none;
+    border: none;
+    margin: 3px;
+}
+.memgen__input:focus, .memgen__input:active {
+    outline: #ff2b1d;
+    border: #ff2b1d;
+}
+
+.memgen__form {
+    display: flex;
+    justify-self: left;
+    flex-direction: column;
+    margin-bottom: -5px;
+}
+
+.memgen__form button {
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    background-color: cornflowerblue;
+    color: white;
+    padding: 2px 4px;
+    height: 25px;
+    cursor: pointer;
+    transition: all .3s;
+    width: 100%;
+}
+
+.memgen__form button:hover {
+    background-color: #6f54ff;
+}
+
+.inputs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.App {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+html, body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  background: #172035;
+}
+
+#root {
+  height: 100%;
+}
